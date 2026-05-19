@@ -40,56 +40,6 @@ titleFont.addEventListener("change", () => {
   titleText.style.fontFamily = titleFont.value;
 });
 
-function makeDraggable(el) {
-  let isDragging = false;
-  let startX, startY, startLeft, startTop;
-
-  function startDrag(x, y) {
-    isDragging = true;
-    startX = x;
-    startY = y;
-    startLeft = el.offsetLeft;
-    startTop = el.offsetTop;
-  }
-
-  function moveDrag(x, y) {
-    if (!isDragging) return;
-
-    el.style.left = startLeft + (x - startX) + "px";
-    el.style.top = startTop + (y - startY) + "px";
-    el.style.transform = "none";
-  }
-
-  el.addEventListener("mousedown", (e) => {
-    startDrag(e.clientX, e.clientY);
-  });
-
-  document.addEventListener("mousemove", (e) => {
-    moveDrag(e.clientX, e.clientY);
-  });
-
-  document.addEventListener("mouseup", () => {
-    isDragging = false;
-  });
-
-  el.addEventListener("touchstart", (e) => {
-    const touch = e.touches[0];
-    startDrag(touch.clientX, touch.clientY);
-  });
-
-  document.addEventListener("touchmove", (e) => {
-    const touch = e.touches[0];
-    moveDrag(touch.clientX, touch.clientY);
-  });
-
-  document.addEventListener("touchend", () => {
-    isDragging = false;
-  });
-}
-
-makeDraggable(nameText);
-makeDraggable(titleText);
-
 function downloadCard() {
   html2canvas(document.getElementById("card"), {
     useCORS: true,
