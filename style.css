@@ -1,4 +1,9 @@
 @font-face {
+  font-family: "FFShamelSansBold";
+  src: url("./fonts/ArbFONTS-FFShamelFamily-SansOneBold.ttf") format("truetype");
+}
+
+@font-face {
   font-family: "FFShamelNormal";
   src: url("./fonts/FFShamelFamily-NormalUnique%202.ttf") format("truetype");
 }
@@ -101,7 +106,7 @@ button {
 .name {
   bottom: 38px;
   font-size: 18px;
-  font-family: "FFShamelNormal";
+  font-family: "FFShamelSansBold";
 }
 
 .title {
