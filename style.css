@@ -1,31 +1,31 @@
 @font-face {
-  font-family: "FFShamel";
-  src: url("fonts/FFShamelFamily-NormalUnique 2.ttf") format("truetype");
+  font-family: "FFShamelNormal";
+  src: url("./fonts/FFShamelFamily-NormalUnique%202.ttf") format("truetype");
 }
 
 @font-face {
   font-family: "FFShamelMedium";
-  src: url("fonts/FFShamelFamily-MediumUnique 2.ttf") format("truetype");
+  src: url("./fonts/FFShamelFamily-MediumUnique%202.ttf") format("truetype");
 }
 
 @font-face {
   font-family: "FFShamelLight";
-  src: url("fonts/FFShamelFamily-LightUnique 2.ttf") format("truetype");
-}
-
-@font-face {
-  font-family: "CoHeadline";
-  src: url("fonts/Co Headline W01 Regular 3.ttf") format("truetype");
+  src: url("./fonts/FFShamelFamily-LightUnique%202.ttf") format("truetype");
 }
 
 @font-face {
   font-family: "CoHeadlineBold";
-  src: url("fonts/Co Headline W01 Bold 5.otf") format("opentype");
+  src: url("./fonts/Co%20Headline%20W01%20Bold%205.otf") format("opentype");
+}
+
+@font-face {
+  font-family: "CoHeadlineRegular";
+  src: url("./fonts/Co%20Headline%20W01%20Regular%203.ttf") format("truetype");
 }
 
 @font-face {
   font-family: "CoHeadlineLight";
-  src: url("fonts/Co Headline W01 Light 5.otf") format("opentype");
+  src: url("./fonts/Co%20Headline%20W01%20Light%205.otf") format("opentype");
 }
 
 body {
@@ -101,11 +101,11 @@ button {
 .name {
   bottom: 38px;
   font-size: 18px;
-  font-family: "FFShamel";
+  font-family: "FFShamelNormal";
 }
 
 .title {
   bottom: 12px;
   font-size: 14px;
-  font-family: "CoHeadline";
+  font-family: "CoHeadlineRegular";
 }
